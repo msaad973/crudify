@@ -1,0 +1,81 @@
+/* adduser.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+#add-section {
+    padding: 1rem 0;
+    min-height: 100vh;
+}
+div.label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color-1);
+}
+.label>span {
+    font-size: 2rem;
+    font-family: Roboto-Bold;
+}
+.label>i {
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+form {
+    margin: 1rem;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    background-color:rgb(52, 52, 133) ;
+    color: white;
+}
+form>.F-1 {
+    display: flex;
+    flex-direction: column;
+}
+.F-1>label {
+    margin-bottom: 5px;
+}
+.F-1>input {
+    padding: 5px 48px;
+    border: 2px solid var(--white);
+    border-radius: 2px;
+}
+.F-1>input[type="date"] {
+    padding: 4px 10px;
+}
+.F-2>select {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 4px 10px;
+    border: 2px solid var(--white);
+    border-radius: 2px;
+}
+.add-btn{
+    border: 1px solid black;
+}
+.add-btn:hover{
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+}
+/* .third-type button {
+    background-color:green ;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--white);
+    color: var(--white);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: var(--transition-1);
+}
+.third-type button:hover {
+    background-color: rgb(200, 30, 30);
+    border: 2px solid rgb(239, 231, 232);
+} */

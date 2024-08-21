@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDIFY</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+</head>
+
+<body>
+    <div class="login-container">
+        <form class="login-form" onsubmit="return login(event)">
+            <img src="logo.png-1.png" alt="Member Login Logo" class="login-logo">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username">
+            <span id="username-error" class="error-message"></span>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            <span id="password-error" class="error-message"></span>
+            <button class="buttonn" type="submit">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>

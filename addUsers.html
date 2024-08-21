@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User data</title>
+    <link rel="stylesheet" href="adduser.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./cruud.js" defer></script>
+    <link rel="stylesheet" href="navbar.html">
+    <script src="./adduser.js" defer></script>
+    <link href="navbar.html" rel="import" />
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <section id="add-section" class="container">
+        <div class="label">
+            <span>Add User</span>
+            <i class="fa-solid fa-user-plus"></i>
+        </div>
+        <form id="add-user-form" class="adduser">
+            <div class="F-1">
+                <label for="image">Image URL:</label>
+                <input type="url" id="image" name="image" placeholder="e.g. https://robohash.org/Maurine.png"
+                    value="https://robohash.org/Trace.png?set=set4" required>
+            </div>
+            <div class="F-1">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="e.g. Saad" required>
+            </div>
+            <div class="F-1">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="e.g. Chishti" required>
+            </div>
+            <div class="F-1">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. +92 3027200177" required>
+            </div>
+            <div class="F-1">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="e.g. muhammadsaadullah973@gmail.com" required>
+            </div>
+            <div class="F-1">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="e.g. Baghban Pura, Lahore" required>
+            </div>
+            <div class="F-1">
+                <label for="birthDate">Date Of Birth:</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+            </div>
+            <div class="F-1">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="0" max="150" placeholder="e.g. 24" required>
+            </div>
+            <div class="F-2">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="F-2">
+                <button type="submit" class="add-btn">Add User</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>

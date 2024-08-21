@@ -4,84 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crudify</title>
-    <link rel="stylesheet" href="Alluser.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="./cruud.js" defer></script>
+    <title>CRUDIFY</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
 </head>
 
 <body>
-    <div id="navbar"></div>
-
+    <div class="login-container">
+        <form class="login-form" onsubmit="return login(event)">
+            <img src="logo.png-1.png" alt="Member Login Logo" class="login-logo">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username">
+            <span id="username-error" class="error-message"></span>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            <span id="password-error" class="error-message"></span>
+            <button class="buttonn" type="submit">Login</button>
+        </form>
     </div>
-    <div class="searchBar">
-        <input type="text" id="searchBar" placeholder="Search...">
-        <button id="searchBtn">Search</button>
-    </div>
-    <div>
-        <span>
-            <i id="fa-solid fa-phone"></i>
-        </span>
-    </div>
-    <div id="content">
-        <div id="card-body" class="cards-container"></div>
-        <div class="label"></div>
-    </div>
-    <div id="editPopup" class="popup">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <h2>Edit User</h2>
-            <form id="editForm">
-                <div class="fields">
-                    <div>
-                        <label for="editImageUrl">Image Url:</label>
-                        <input type="text" id="editImageUrl" name="ImageUrl"
-                            placeholder="e.g. https://robohash.org/Maurine.png">
-                    </div>
-                    <div>
-                        <label for="editFirstName">First Name:</label>
-                        <input type="text" id="editFirstName" name="firstName" placeholder="e.g. Saad" required>
-                    </div>
-                    <div>
-                        <label for="editLastName">Last Name:</label>
-                        <input type="text" id="editLastName" name="lastName" placeholder="e.g. Chishti" required>
-                    </div>
-                    <div>
-                        <label for="editEmail">Email:</label>
-                        <input type="email" id="editEmail" name="email" name="email"
-                            placeholder="e.g. muhammadsaadullah973@gmail.com" required>
-                    </div>
-                    <div>
-                        <label for="editPhone">Phone:</label>
-                        <input type="text" id="editPhone" name="phone" placeholder="e.g. +92 3027200177">
-                    </div>
-                    <div>
-                        <label for="editBirthDate">Birth Date:</label>
-                        <input type="text" id="editBirthDate" name="birthDate" required>
-                    </div>
-                    <div>
-                        <label for="editCity">City:</label>
-                        <input type="text" id="editCity" name="city" placeholder="e.g.Baghban pura Lahore" required>
-                    </div>
-                    <div>
-                        <label for="editGender">Gender:</label>
-                        <input type="text" id="editGender" name="gender" required>
-                    </div>
-                    <div>
-                        <label for="editAge">Age:</label>
-                        <input type="number" id="editAge" name="age">
-                    </div>
-                </div>
-                <div class="button">
-                    <button type="button" class="save-btn" onclick="saveChanges()">Save Changes</button>
-                    <button type="button" class="can~cel-btn" onclick="closePopup()">Cancel</button>
-                </div>
-
-            </form>
-        </div>
-    </div>
-    <div id="deletePopup" class="popup"></div>
-
 </body>
 
 </html>

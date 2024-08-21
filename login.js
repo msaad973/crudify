@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let token = localStorage.getItem('token');
     if (token != null) {
-        window.location.href = 'index.html';
+        window.location.href = 'Alluser.html';
     }
 });
 
@@ -59,7 +59,7 @@ function login(event) {
                 localStorage.setItem('userFirstName', data.firstName);
                 localStorage.setItem('userLastName', data.lastName);
 
-                window.location.href = 'index.html';
+                window.location.href = 'Alluser.html';
             })
             .catch(error => {
                 console.error('Error:', error);

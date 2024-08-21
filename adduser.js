@@ -27,7 +27,7 @@ userForm.addEventListener('submit', function (e) {
         age: userAgeInput.value,
         gender: userGenderInput.value
     };
-    console.log('fcfcfc', userAddressInput, 'new user', newUser)
+    // console.log('fcfcfc', userAddressInput, 'new user', newUser)
     let users = JSON.parse(localStorage.getItem('get-users')) || [];
     users.push(newUser);
     localStorage.setItem('get-users', JSON.stringify(users));

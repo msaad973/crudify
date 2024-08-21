@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let token = localStorage.getItem('token');
     if (token != null) {
-        window.location.href = 'Alluser.html';
+        window.location.href = 'index.html';
     }
 });
 
